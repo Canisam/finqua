@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Careers | Fynqua</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap">
+<style>
+:root{--bg:#011A3D;--bg2:#01405C;--card:#023558;--line:#00708D;--tx:#FFFFFF;--mut:#a9cadb;--cy:#23E9EE;--btn-tx:#011A3D;--foot:#012341;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#F3F9FC;--bg2:#E3F1F8;--card:#FFFFFF;--line:#9cc9da;--tx:#011A3D;--mut:#35566d;--cy:#00798F;--foot:#E3F1F8;color-scheme:light}}
+:root[data-theme="light"]{--bg:#F3F9FC;--bg2:#E3F1F8;--card:#FFFFFF;--line:#9cc9da;--tx:#011A3D;--mut:#35566d;--cy:#00798F;--foot:#E3F1F8;color-scheme:light}
+*{box-sizing:border-box}html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+body{margin:0;min-height:100%;background:linear-gradient(180deg,var(--bg),var(--bg2));background-attachment:fixed;color:var(--tx);font:16px/1.7 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;line-height:1.12;margin:0;letter-spacing:-.01em}
+a{color:inherit}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:800 22px Sora;color:var(--cy);text-decoration:none;letter-spacing:.02em}.brand svg{width:34px;height:34px}
+nav{display:flex;gap:22px;align-items:center;font-size:15px}nav a{text-decoration:none;color:var(--mut)}nav a:hover,nav a[aria-current]{color:var(--tx)}
+.login{border:1px solid var(--cy);color:var(--cy)!important;border-radius:10px;padding:6px 16px;font-weight:600}
+@media(max-width:760px){nav a:not(.login){display:none}}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font-weight:600;text-decoration:none;border:0;font:600 16px Inter,sans-serif;cursor:pointer}
+.b1{background:linear-gradient(135deg,#39E1FE,#17D0FB);color:var(--btn-tx);box-shadow:0 0 28px #18D1FB44}
+.b2{border:1px solid var(--cy);color:var(--cy);background:transparent}
+:focus-visible{outline:3px solid var(--cy);outline-offset:3px;border-radius:6px}
+.hero{padding:76px 0 30px}.hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;max-width:13em}
+.hero p{max-width:36em;color:var(--mut);font-size:18px;margin:18px 0 26px}
+.sec{padding:36px 0}h2{font-size:clamp(26px,4vw,36px);font-weight:700;margin-bottom:12px}.lead{color:var(--mut);max-width:38em;margin:0 0 22px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+.w{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:-1px -1px 0 0}
+.w h3{font-size:18px;margin-bottom:6px}.w p{margin:0;color:var(--mut);font-size:15px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--tx);border-radius:99px;padding:8px 18px;font:500 15px Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--cy);border-color:var(--cy);color:var(--btn-tx);font-weight:600}
+.count{color:var(--mut);font-size:14px;margin:0 0 12px}
+.roles{border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}
+.roles details{border-bottom:1px solid var(--line)}.roles details:last-child{border-bottom:0}
+summary{list-style:none;display:flex;align-items:center;gap:16px;padding:18px 22px;cursor:pointer}summary::-webkit-details-marker{display:none}
+.rt{flex:1;min-width:0}.rt h3{font-size:19px}.rt span{color:var(--mut);font-size:14px}
+.tag{flex:none;font-size:13px;border:1px solid var(--cy);color:var(--cy);border-radius:99px;padding:2px 12px}
+.chev{flex:none;width:18px;height:18px;border-right:2px solid var(--cy);border-bottom:2px solid var(--cy);transform:rotate(45deg);transition:transform .2s}
+details[open] .chev{transform:rotate(-135deg)}details[open]{background:color-mix(in srgb,var(--cy) 7%,transparent)}
+.rb{padding:2px 22px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 36px;color:var(--mut)}
+.rb h4{font:700 15px Sora;color:var(--tx);margin:12px 0 6px}.rb ul{margin:0;padding-left:18px}.rb li{margin-bottom:4px}.rb p{margin:0}
+.rb .act{grid-column:1/-1;margin-top:10px}
+.empty{padding:24px;color:var(--mut)}
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.box{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:24px}.box h3{font-size:19px;margin-bottom:10px;color:var(--cy)}
+.box ul{margin:0;padding-left:18px;color:var(--mut)}.box li{margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;counter-reset:s}
+.step{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:18px;counter-increment:s}
+.step:before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--cy);color:var(--cy);font:700 15px Sora;margin-bottom:12px}
+.step h3{font-size:17px;margin-bottom:4px}.step p{margin:0;color:var(--mut);font-size:15px}
+.cta{margin:20px 0 12px;border:1px solid var(--cy);border-radius:20px;padding:34px 28px;background:radial-gradient(600px 260px at 90% 0,#23E9EE33,transparent),var(--card)}
+.cta h2{max-width:15em}.cta p{color:var(--mut);margin:6px 0 18px;max-width:36em}
+.note{color:var(--mut);font-size:14px;margin-top:12px}
+footer{margin-top:40px;background:var(--foot);border-top:1px solid var(--line);padding:24px 0 32px;font-size:13px;color:var(--mut)}
+footer .wrap{display:flex;gap:16px 40px;justify-content:space-between;flex-wrap:wrap}footer p{margin:0;max-width:44em}footer div a{margin-left:18px;text-decoration:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.menubtn{display:none;width:44px;height:44px;border:1px solid var(--cy);border-radius:10px;background:transparent;cursor:pointer;position:relative}
+.menubtn span,.menubtn span:before,.menubtn span:after{position:absolute;left:11px;width:20px;height:2px;background:var(--cy);content:"";transition:transform .2s,top .2s}
+.menubtn span{top:20px}.menubtn span:before{top:-6px;left:0}.menubtn span:after{top:6px;left:0}
+.menubtn[aria-expanded="true"] span{background:transparent}.menubtn[aria-expanded="true"] span:before{top:0;transform:rotate(45deg)}.menubtn[aria-expanded="true"] span:after{top:0;transform:rotate(-45deg)}
+@media(max-width:860px){
+ .menubtn{display:block}
+ header nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 20px 18px}
+ header nav.open{display:flex}
+ header nav a:not(.login){display:block!important;padding:13px 4px;border-bottom:1px solid var(--line);font-size:17px}
+ header nav .login{margin-top:14px;text-align:center;padding:11px}
+}
+.tbc-note{color:var(--mut);font-size:14px}
+</style>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><meta name="description" content="Open roles at Fynqua: sales, technology, operations and support."></head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="index.html" aria-label="Fynqua home"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="34" height="34" rx="8"/><path d="M9 16c3-3 5 3 8 0s5 3 8 0 4 2 6 0M9 21c3-3 5 3 8 0s5 3 8 0 4 2 6 0M9 26c3-3 5 3 8 0s5 3 8 0 4 2 6 0"/></svg> FYNQUA</a><button class="menubtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainnav"><span></span></button><nav id="mainnav" aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About us</a><a href="careers.html" aria-current="page">Careers</a><a href="contact.html">Contact</a><a class="login" href="login.html">Log In</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<h1>Help a million shopkeepers earn more.</h1>
+<p>We are building the platform that turns neighbourhood shops into banking points. If you like real problems and real customers, there is work for you here.</p>
+<a class="btn b1" href="#roles">See open roles</a>
+</div></section>
+
+<section class="sec" id="careers"><div class="wrap">
+<h2>What working here looks like</h2>
+<p class="lead">A small team on a hard problem. You will see your work reach a shopkeeper’s phone, not sit in a slide deck.</p>
+<div class="why">
+<div class="w"><h3>Real problems</h3><p>Payments that fail, refunds that stall, commissions that need to be fair. You fix what retailers actually complain about.</p></div>
+<div class="w"><h3>Close to the customer</h3><p>Sales, support and tech sit close to the retailer’s voice. Feedback reaches the team fast.</p></div>
+<div class="w"><h3>Ownership</h3><p>Clear responsibility for your area, and room to take on more as the platform grows.</p></div>
+<div class="w"><h3>Learning on the job</h3><p>Fintech, payments and compliance are learned by doing, with experienced people around you.</p></div>
+</div>
+<p class="note">[Benefits, work hours, hybrid policy, bonuses: CONFIRM WITH HR before publishing any promise]</p>
+</div></section>
+
+<section class="sec" id="roles"><div class="wrap">
+<h2>Open roles</h2>
+<p class="lead">Pick a team to narrow the list. Open a role to see what you would do and what we look for.</p>
+<div class="chips" role="group" aria-label="Filter roles by team">
+<button class="chip" data-f="all" aria-pressed="true">All roles</button>
+<button class="chip" data-f="field" aria-pressed="false">Sales and field</button>
+<button class="chip" data-f="tech" aria-pressed="false">Technology</button>
+<button class="chip" data-f="ops" aria-pressed="false">Operations and support</button>
+</div>
+<p class="count" id="count" aria-live="polite"></p>
+<div class="roles" id="list">
+
+<details data-t="field"><summary><span class="rt"><h3>District Manager</h3><span>Delhi NCR and other districts · Full time</span></span><span class="tag">Sales and field</span><i class="chev"></i></summary>
+<div class="rb"><div><h4>What you will do</h4><ul><li>Grow the retailer and distributor network in your district</li><li>Meet partners in person and help them go live</li><li>Track activity and coach your team to hit targets</li></ul></div>
+<div><h4>What we look for</h4><ul><li>Field sales or channel experience, ideally in fintech or payments</li><li>Comfort speaking Hindi and English with shopkeepers</li><li>A track record of building teams and relationships</li></ul></div>
+<div class="act"><a class="btn b1 apply" data-role="District Manager" href="#">Apply for this role</a></div></div></details>
+
+<details data-t="field"><summary><span class="rt"><h3>Business Development Executive</h3><span>Delhi NCR · Full time</span></span><span class="tag">Sales and field</span><i class="chev"></i></summary>
+<div class="rb"><div><h4>What you will do</h4><ul><li>Find and meet retailers and distributors</li><li>Explain the platform in plain language and handle objections</li><li>Log every conversation so we learn what shopkeepers really say</li></ul></div>
+<div><h4>What we look for</h4><ul><li>Strong conversation skills and patience</li><li>Interest in payments and small business</li><li>Freshers with drive are welcome to apply</li></ul></div>
+<div class="act"><a class="btn b1 apply" data-role="Business Development Executive" href="#">Apply for this role</a></div></div></details>
+
+<details data-t="tech"><summary><span class="rt"><h3>Backend Developer</h3><span>Delhi NCR · Full time</span></span><span class="tag">Technology</span><i class="chev"></i></summary>
+<div class="rb"><div><h4>What you will do</h4><ul><li>Build and maintain the APIs behind AEPS, bill payments and recharge</li><li>Make transactions reliable, traceable and easy to reconcile</li><li>Work with partner bank and provider integrations</li></ul></div>
+<div><h4>What we look for</h4><ul><li>Solid backend experience and clean API design</li><li>Care for security, logging and failure handling</li><li>Experience with payments or wallets is a plus</li></ul></div>
+<div class="act"><a class="btn b1 apply" data-role="Backend Developer" href="#">Apply for this role</a></div></div></details>
+
+<details data-t="ops"><summary><span class="rt"><h3>Customer Support Lead</h3><span>Delhi NCR · Full time</span></span><span class="tag">Operations and support</span><i class="chev"></i></summary>
+<div class="rb"><div><h4>What you will do</h4><ul><li>Lead the team that helps retailers when a transaction fails</li><li>Set up clear steps for refunds, disputes and escalations</li><li>Turn repeated complaints into fixes with product and tech</li></ul></div>
+<div><h4>What we look for</h4><ul><li>Experience running a support team</li><li>Calm, clear communication in Hindi and English</li><li>Interest in payments operations</li></ul></div>
+<div class="act"><a class="btn b1 apply" data-role="Customer Support Lead" href="#">Apply for this role</a></div></div></details>
+
+<details data-t="ops"><summary><span class="rt"><h3>Retailer Onboarding and KYC Executive</h3><span>Delhi NCR · Full time</span></span><span class="tag">Operations and support</span><i class="chev"></i></summary>
+<div class="rb"><div><h4>What you will do</h4><ul><li>Guide new partners through registration and verification</li><li>Check documents carefully and follow the approved KYC process</li><li>Keep onboarding quick without cutting corners</li></ul></div>
+<div><h4>What we look for</h4><ul><li>Attention to detail and respect for process</li><li>Friendly, clear phone and chat communication</li><li>Interest in compliance work</li></ul></div>
+<div class="act"><a class="btn b1 apply" data-role="Retailer Onboarding and KYC Executive" href="#">Apply for this role</a></div></div></details>
+
+<div class="empty" id="empty" hidden>No roles in this team right now. Send us your CV below and tell us how you would help.</div>
+</div>
+<p class="note">[Open roles, locations and job details are drafts: CONFIRM WITH HR]</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+<h2>Who tends to do well here</h2>
+<div class="fit">
+<div class="box"><h3>You will like it if you</h3><ul><li>Enjoy explaining things simply</li><li>Want to see the result of your work quickly</li><li>Take responsibility when something breaks</li><li>Respect that handling money needs care</li></ul></div>
+<div class="box"><h3>It may not suit you if you</h3><ul><li>Want a fixed, slow-moving routine</li><li>Prefer to stay away from customers</li><li>Are uncomfortable with rules and checks</li></ul></div>
+</div></div></section>
+
+<section class="sec"><div class="wrap">
+<h2>How hiring works</h2>
+<p class="lead">Four steps, no surprises. We aim to be clear with you at every stage.</p>
+<div class="steps">
+<div class="step"><h3>Apply</h3><p>Email your CV with the role in the subject.</p></div>
+<div class="step"><h3>Intro call</h3><p>A short chat about you and the role.</p></div>
+<div class="step"><h3>Role conversation</h3><p>Meet the team lead. Tech roles may include a small task.</p></div>
+<div class="step"><h3>Decision</h3><p>We share our decision and the next steps with you.</p></div>
+</div>
+<p class="note">[Response time promise, e.g. “within X working days”: CONFIRM WITH HR]</p>
+</div></section>
+
+<section class="sec" id="apply"><div class="wrap"><div class="cta">
+<h2>Don’t see your role? Tell us what you do well.</h2>
+<p>Send your CV and a few lines on how you could help Fynqua. We keep good profiles in mind for new openings.</p>
+<a class="btn b1 apply" data-role="General application" href="#">Send your CV</a>
+<p class="note" style="margin-bottom:0">[HR email address: CONFIRM WITH HR]. The button opens your email app with the subject filled in.</p>
+</div></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="yr">2026</span> Fynqua. All rights reserved. Fynqua is a technology platform and not a bank. Services are provided through partner banks. [License / partner details]</p><div><a href="legal.html#terms">Terms</a><a href="legal.html#privacy">Privacy</a><a href="legal.html#grievance">Grievance</a></div></div></footer>
+<script>
+(function(){
+var HR_EMAIL=''; // add the HR address here once confirmed
+var chips=document.querySelectorAll('.chip'),rows=document.querySelectorAll('#list details'),count=document.getElementById('count'),empty=document.getElementById('empty');
+function show(f){
+ var n=0;
+ rows.forEach(function(r){var ok=f==='all'||r.dataset.t===f;r.hidden=!ok;if(ok)n++;});
+ chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.f===f?'true':'false');});
+ count.textContent=n+(n===1?' open role':' open roles');
+ empty.hidden=n!==0;
+}
+chips.forEach(function(c){c.addEventListener('click',function(){show(c.dataset.f);});});
+document.querySelectorAll('.apply').forEach(function(a){
+ var role=a.dataset.role;
+ a.href='mailto:'+HR_EMAIL+'?subject='+encodeURIComponent(role==='General application'?'Application: Fynqua':'Application: '+role);
+});
+show('all');
+})();
+</script>
+<script>
+(function(){
+var b=document.querySelector('.menubtn'),n=document.getElementById('mainnav');
+if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu')});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}})}
+var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();
+var q=new URLSearchParams(location.search).get('why'),map={partner:'Become a partner',support:'Support for existing retailer',distributor:'Distributor enquiry',other:'Something else'};
+if(q&&map[q]){document.querySelectorAll('input[name=why]').forEach(function(r){if(r.value===map[q]){r.checked=true;r.dispatchEvent(new Event('change',{bubbles:true}))}})}
+})();
+</script></body>
+</html>
